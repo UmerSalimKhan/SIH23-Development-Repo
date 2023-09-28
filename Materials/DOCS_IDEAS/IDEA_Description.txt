@@ -1,0 +1,18 @@
+The idea is divided into two parts, one attendance type and other checking inner availability.
+The first portion: Attendance system - This will help in keeping track over entry and exit of the doctor.
+The second option: Sensors (RPFD: Combination of RFID, Proximity, and Face Detection).
+Let see both of them in little detail.
+The attendance system will be nothing but normal cameras which will be used to recognize doctors with less of there data and high accuracy. This can be fix in/ out of the hospital gates. The track of doctors is necessary to manage appointments efficiently.
+The second portion will be used for finding doctors location within hospital such as OT, and other rooms. It will also used to find availability and status of doctor. Using a RFID, Proximity, and Face Detection will give a good and accurate result. 
+The above describe how availability of doctor will be track.
+But in situations such as tea break or doctor may went to answer call of nature or in a procedure we will be using PMT function.
+PMT acronym of PlusMinusTime function. The major functionality of pmt is to tell how much time a doctor might take for a particular task. This will be achieved by keeping some constant variable before hand which we can take a heuristic of. Using pmt we will calculate how much time of doctor is remaining to know whether is it within doctors sitting time and to allow appointments. 
+Lastly, its worth to note that there can be propagation delay with in the solution. But we have solution of that as well. We won't be read all info from RPFD at once rather a common foreign key will be there which will be using to extract data from DB rather than keeping data in taggers. 
+
+The use of AI will be in :
+->Knowing doctors availability seperately.
+->Managing users.
+->Notifying users.
+->Intelligently using turing based method that is conditional methods to find accurate availabilty time.
+-> PMT will be intrinsically AI based.
+-> Managing sessions.

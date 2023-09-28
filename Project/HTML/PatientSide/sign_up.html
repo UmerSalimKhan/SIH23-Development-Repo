@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@300;400;500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap');
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 90vh;
+                font-family:'Montserrat', sans-serif;
+                font-family:'Nunito', sans-serif;
+                font-family:'Poppins', sans-serif;
+                background: #fff;
+
+            }
+            .container{
+                width: 300px;
+                height: 500px;
+                padding: 20px;
+                justify-content: center;
+                align-items: center;
+                background-color: #fff;
+            }
+            .Welcome{
+                position: relative;
+                max-width: 100%;
+                
+            }
+            .form-head{
+                border-bottom-left-radius: 20px;
+                color: white;
+                padding: 3px;
+                height: 130px;
+                width: 260px;
+                text-align: center;
+                background-color: #0d7d9f;
+            }
+            .overlay-text{
+                font-family:'Montserrat', sans-serif;
+                font-family:'Nunito', sans-serif;
+                font-family:'Poppins', sans-serif;
+                position: absolute;
+                top: 65%;
+                left: 40%;
+                font-size: 150%;
+                transform: translate(-50%, -50%);
+                color: #fff;
+            }
+            form .user-box{
+                position: relative;
+                margin-top: 20px;
+
+            }
+            form .user-box input{
+                width: 100%;
+                padding: 20px 0px;
+                color: #555;
+                background: transparent;
+                font-size: 14px;
+                margin-bottom: 15px;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid rgb(218, 218, 218);
+            }
+            form .user-box input:focus ~ label,
+            form .user-box input:valid ~ label{
+                top: -15px;
+                left: 0;
+                color: #3a9ebc;
+                font-size: 14px;
+            }
+            .checkbox{
+                color: #555;
+                font-size: 13px;
+                padding: 0px 2px;
+            }
+
+            a{
+                text-decoration: none;
+                font-size: 13px;
+                color: #555;
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-around;
+
+            }
+            span{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            span label{
+                margin-top: 20px;
+                padding: 10px 60px;
+                font-size: 14px;
+                background-color: #39a9cc;
+                color: #fff;
+                border: none;
+                border-radius: 30px;
+                cursor: pointer;
+                font-family:'Montserrat', sans-serif;
+                font-family:'Nunito', sans-serif;
+                font-family:'Poppins', sans-serif; 
+
+            }
+            #signup-button{
+                display: none;
+                
+            }
+            #signup-button:checked ~ .welcome{
+                display: block;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="Welcome">
+                <div class="form-head">
+                    <div class="overlay-text">
+                        Welcome to Squadrama!
+                    </div>
+                </div>
+            </div>
+            <form id="signup-form" action="/sign-up-in-account" method="post" >
+                <div class="user-box">
+                    <input type="text" name="pno" required placeholder="Enter your Phone Number">
+                </div>
+                <div class="user-box">
+                    <input type="password" name="pass" required placeholder="Enter your Password">
+                </div> 
+                <div class="checkbox">
+                    <input type="checkbox" id="remember" name="remember" >
+                <label>Remember me</label>
+                </div>
+                <br>
+                <span>
+                    <input type="submit" id="signup-button" value="submit">
+                    <label for="signup-button">SIGN UP</label>
+                </span>
+                <a href="login.html">Have an account? Login</a>
+            </form>
+        </div>
+    </body>
+</html>

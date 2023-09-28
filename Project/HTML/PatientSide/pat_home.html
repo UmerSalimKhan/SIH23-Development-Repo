@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        .doctor-img {
+            max-width: 27%;
+            max-height: 27%;
+            display: block;
+            margin: auto;
+        }
+
+        .container {
+            background-color: whitesmoke;
+            border: 1px solid turquoise;
+            border-color: rgba(130, 164, 180, 0.877);
+            align-self: center;
+            display: flex;
+            text-align: center;
+            margin-top: 40px;
+            margin-left: 3cm;
+            margin-right: 3cm;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 1rem;
+            border-radius: 50px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(16, 170, 197, 0.5);
+        }
+
+        .custom-button {
+            background-color: #91C8E4;
+            color: whitesmoke;
+            padding: 10px 20px;
+            width: 200px;
+            height: 70px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: larger;
+            font-family: 'Montserrat', sans-serif;
+            margin: 10px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Media query for larger screens (adjust the screen width breakpoint as needed) */
+        @media (min-width: 768px) {
+            .custom-button {
+                width: 500px;
+            }
+        }
+
+        /* Optional: Add some margin or padding to the button if needed */
+        .custom-button+.custom-button {
+            margin-top: 10px;
+        }
+
+        .custom-button:hover {
+            text-decoration: underline;
+        }
+
+        .logo-image {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .logo-image2 {
+            width: 25px;
+            height: 25px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .icon {
+            width: 40px;
+            /* Adjust the width and height as needed */
+            height: 40px;
+            position: fixed;
+            /* Position the icon relative to the viewport */
+            top: 0;
+            /* Position it at the top */
+            right: 0;
+            /* Position it at the right */
+            margin: 20px;
+            /* Add some margin to give space from the top and right edges */
+            margin-right: 20px;
+        }
+
+        .clickable {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="/Materials/doctor.png" class="doctor-img">
+    </div>
+    <a href="patient_profile.html">
+        <img src="/Materials/transparent icon.png" alt="Icon" class="icon">
+
+    </a>
+
+    <div class="container">
+        <div class="column">
+            <button class="custom-button">
+                <img src="/Materials/appointment.jpg" alt="Logo" class="logo-image"><a href="search_hospitals.html" class="clickable"> Book an appointment</a></button>
+        </div>
+        <div class="column">
+            <button class="custom-button"><img src="/Materials/Query.png" alt="Logo" class="logo-image2"><a href="" class="clickable"> About us</a></button>
+        </div>
+        <div class="column">
+            <button class="custom-button"><img src="/Materials/contact.png" alt="Logo" class="logo-image"><a href="" class="clickable"> Contact us</a></button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Directory</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@300;400;500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Nunito', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .search-bar {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 500px;
+        }
+
+        .hospital-section {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .hospital-image {
+            flex: 1;
+            max-width: 100px;
+        }
+
+        .hospital-details {
+            flex: 3;
+            padding-left: 20px;
+        }
+
+        .hospital-name {
+            font-weight: bold;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+        }
+
+        .clickable {
+            color: black; 
+            text-decoration: none; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hospitals near you</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for a hospital">
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="hospital-section">
+            <div class="hospital-image">
+                <img src="../HospImages/hospital sample pic.jpg" alt="Hospital Balaji">
+            </div>
+            <a href="search_drs.html" class="clickable">
+                <div class="hospital-details">
+                    <div class="hospital-name">Balaji Hospital</div>
+                    <div class="location">Byculla</div>
+                </div>
+            </a>
+        </section>
+
+        <section class="hospital-section">
+            <div class="hospital-image">
+                <img src="../HospImages/hospital sample pic 2.jpg" alt="Hospital Sangram">
+            </div>
+            <div class="hospital-details">
+                <div class="hospital-name">Sangram Hospital</div>
+                <div class="location">Bandra</div>
+            </div>
+        </section>
+
+        <section class="hospital-section">
+            <div class="hospital-image">
+                <img src="../HospImages/hospital sample pic 3.jpg" alt="Hospital Vishwanath">
+            </div>
+            <div class="hospital-details">
+                <div class="hospital-name">Vishwanath Hospital</div>
+                <div class="location">Byculla</div>
+            </div>
+        </section>
+
+        <section class="hospital-section">
+            <div class="hospital-image">
+                <img src="" alt="Hospital Shiv">
+            </div>
+            <div class="hospital-details">
+                <div class="hospital-name">Shiv Hospital</div>
+                <div class="location">Khar</div>
+            </div>
+        </section>
+
+        <section class="hospital-section">
+            <div class="hospital-image">
+                <img src="" alt="Hospital Peter">
+            </div>
+            <div class="hospital-details">
+                <div class="hospital-name">St. Peter Hospital</div>
+                <div class="location">Dadar</div>
+            </div>
+        </section>
+
+        <section class="hospital-section">
+            <div class="hospital-image">
+                <img src="" alt="Hospital XYZ">
+            </div>
+            <div class="hospital-details">
+                <div class="hospital-name">XYZ Hospital</div>
+                <div class="location">Mahim</div>
+            </div>
+        </section>
+
+        <!-- Add more hospital sections as needed -->
+    </div>
+</body>
+</html>

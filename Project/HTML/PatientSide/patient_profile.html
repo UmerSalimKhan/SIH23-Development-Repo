@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Profile page</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        } 
+        .container { 
+            background-color: whitesmoke;
+            border: 1px solid turquoise;
+            border-color: rgba(130, 164, 180, 0.877);
+            align-self: center;
+            display: flex;
+            text-align: center;
+            margin-top: 40px;
+            margin-left: 3cm;
+            margin-right: 3cm;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 1rem;
+            border-radius: 50px;
+            padding: 20px; 
+            box-shadow: 0 0 10px rgba(16, 170, 197, 0.5);
+        }
+        .custom-button {
+            background-color: #91C8E4;
+            color: whitesmoke;
+            padding: 10px 20px;
+            width: 200px;  
+            height: 70px;  
+            border-radius: 10px;
+            text-align: center;
+            font-size: larger;
+            font-family: 'Montserrat', sans-serif;
+            margin: 10px auto;  
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }  
+        @media (min-width: 768px) {
+            .custom-button {
+                width: 500px;  
+            }
+        }  
+        .custom-button + .custom-button {
+            margin-top: 10px;
+        } 
+        .custom-button:hover { 
+            text-decoration: underline; 
+        } 
+        h2 {
+            text-align: center;  
+            color: white;  
+            background-color: #91C8E4;  
+            padding: 10px 20px;  
+            border-radius: 10px;  
+            border:1px solid rgba(8, 52, 73, 0.877);
+            box-shadow: 0 0 10px rgba(16, 170, 197, 0.5);
+            margin-left: 80px;  
+            margin-right: 80px; 
+        } 
+        .logo-image {
+            width: 30px;  
+            height: 30px;  
+            vertical-align: middle;  
+            margin-right: 10px;  
+        }
+        .logo-image2 {
+            width: 25px;  
+            height: 25px;  
+            vertical-align: middle;  
+            margin-right: 10px;  
+        }
+
+        .clickable {
+            text-decoration: none;
+            color: Black
+        }
+    </style>
+</head>
+<body>  
+        <h2>Profile page</h2> 
+    <div class="container">
+        <div class="column">
+            <button class="custom-button"><img src="/Materials/current appointment.png" alt="Logo" class="logo-image"><a href="CurrentAppointments.html" class="clickable"> Current appointment</a></button>  
+        </div> 
+        <div class="column">
+            <button class="custom-button"><img src="/Materials/past app.png" alt="Logo" class="logo-image"><a href="" class="clickable"> Past appointment</a></button> 
+        </div> 
+        <div class="column">
+            <button class="custom-button"><img src="/Materials/edit prof.png" alt="Logo" class="logo-image"><a href="" class="clickable"> Edit profile</a> </button> 
+        </div> 
+        <div class="column">
+            <button class="custom-button"><img src="/Materials/back.png" alt="Logo" class="logo-image2"><a href="pat_home.html" class="clickable">Back</a></button> 
+        </div> 
+    </div>
+</body>
+</html>

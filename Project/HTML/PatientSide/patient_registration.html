@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register User Detail</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@300;400;500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Nunito', sans-serif;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .data {
+            padding: 5px;
+            display: flex;
+            justify-content: space-between;
+            margin: 4px;
+        }
+        .form-head {
+            color: white;
+            padding: 3px;
+            text-align: center;
+            background-color: #4e7ba8;
+            border-bottom-left-radius: 18px;
+            border-bottom-right-radius: 18px;
+        }
+        .form-save {
+            text-align: center;
+        }
+        .data label {
+            flex: 1;
+            text-align: left;
+            margin-right: 10px;
+        }
+        .data input {
+            flex: 2;
+            text-align: left;
+            border-radius: 3%;
+            border: transparent;
+            border-bottom: 1px solid black;
+        } 
+        
+        .center {
+            width: 40%;
+            height: 450px;
+        }
+
+        form {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 3.5%;
+        }
+
+        .submit {
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Nunito', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            width: 40%;
+            height: 30px;
+            border-radius: 18px;
+            font-size: medium;
+            background-color: #497097;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="notify">
+        <span class="notify"></span>
+    </div>
+    <div class="center">
+        <form action="/register_user_detail" method="post">
+            <div class="form-head">
+                <h3><b>Registration</b></h3>
+            </div> <br/>
+            <div class="form-body">
+                <div class="data">
+                    <label>Name</label>
+                    <input type="text" name="person_name" class="pn" placeholder="Enter your name" required> <br/>    
+                </div>
+                <div class="data">
+                    <label>Gender</label>
+                    <input type="radio" name="gender" class="gender" value="Male">Male
+                    <input type="radio" name="gender" class="gender" value="Female">Female
+                    <input type="radio" name="gender" class="gender" value="Others">Others <br/>
+                </div>
+                <div class="data">
+                    <label>D.O.B</label>
+                    <input type="date" name="dob" class="dob" required> <br/>
+                    <span id="dobError" class="error"></span>
+                </div>
+                <div class="data">
+                    <label>Phone number</label>
+                    <input type="text" name="pno" class="pno" placeholder="Enter your phone number" title="Please provide same phone number which you have given while sign-up" required> <br/>
+                </div>
+                <div class="data">
+                    <label>Email</label>
+                    <input type="email" name="email" class="email" placeholder="Enter your mail"> <br/>
+                </div>
+                <div class="data">
+                    <label>Address</label>
+                    <input type="text" name="address" id="address" placeholder="Enter your address" required>
+                </div>
+            </div> <br/>
+            <div class="form-save">
+                <input type="submit" value="Register" class="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

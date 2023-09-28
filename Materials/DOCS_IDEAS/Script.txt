@@ -1,0 +1,18 @@
+We have faced an unexpected issue while integrating the whole project which leads the execution in three parts. Firstly, we run on live server then the portion which involves database we have done it over node js and lastly on live server again. The issue is diagnosed but and will be solved in some amount of time. The issue we had was of path conflicts via API. 
+We have used web approach as it will be easy access to any user (Desktop, Cell phone, even feature phone).
+
+Let's begin.
+
+This is the opening page of our application. Showing a page to select a role.
+For now as we have done the work for patient side and for doctor side we have created a working registration page. And for others DBS are created for now. 
+So the user might select a role say "Patient". As we have faced an issue which I told earlier we will be going to API.
+Once the user hit on patient button he will be directed to sign up page. In that the user will create an account and the username should not be existing. 
+
+Once signed up, the user will login to the account. The user should be existing and the user will have to use the correct password. We'll be using JWT (JSON WEB TOKEN) for session management.
+
+Once the user logged in, the user will directed to a registration page which is needed to provide detail to doctor about user while taking an appointment. Note that the user have to provide the same number as they provide it while creating an account. Later stages the number verification will be done using OTP while creating the account.
+
+Once user registered his/herself, he will be directed to the home page.
+On the home page user will have profile icon which will help the user to check the current appointments, past appointments, edit profile (if needed). The current appointment will help the user to keep track of the appointments. The real time notification will be given user to update about or reminding the user for the apointment.
+For booking an appointment the user have to click Book an Appointment button.
+The book appointment page will direct the user to select hospitals page, where the user will select the hospital which the user want an appointment in. After the user click on the hospital it needed the app will display doctors registered in that hospital. The user can click on the required doctor and take an appointment.
